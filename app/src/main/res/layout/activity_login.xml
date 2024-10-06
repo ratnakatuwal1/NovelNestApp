@@ -26,7 +26,6 @@
         android:fontFamily="@font/orbitron"
         android:textSize="@dimen/_28ssp"
         android:textAlignment="center"
-        android:layout_marginTop="@dimen/_10sdp"
         android:textStyle="bold"
         android:textColor="@color/headingText"
         android:letterSpacing=".1"
@@ -115,11 +114,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/zenantique"
         android:text="Don't have an account?"
-        android:layout_marginBottom="@dimen/_30sdp"
         android:textColor="@color/subHeadingText"
+        android:layout_marginTop="@dimen/_40sdp"
         android:textSize="@dimen/_18ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/buttonSignin" />
+        app:layout_constraintStart_toStartOf="@+id/buttonSignin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignin" />
 
     <TextView
         android:id="@+id/signupText"
@@ -135,6 +134,7 @@
         android:textSize="@dimen/_18ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/noAccountText"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignin"
         app:layout_constraintStart_toEndOf="@+id/noAccountText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
